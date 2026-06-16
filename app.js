@@ -29,14 +29,6 @@ const questions = [
   }
 ];
 
-/* --- Bonus: Shuffle Function --- */
-function shuffleQuestions() {
-  for (let i = questions.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [questions[i], questions[j]] = [questions[j], questions[i]];
-  }
-}
-
 /* =============================================================
    PART B: YOUR LOGIC FUNCTIONS
    Write the body of each function below.
