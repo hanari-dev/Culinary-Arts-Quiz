@@ -217,6 +217,7 @@ function handleOptionClick(selected, clickedBtn) {
  *   3. Hide the quiz card and reveal the results card
  */
 function showResults() {
+   progressBar.style.width = '100%';
   const score = calculateScore(results);
   const total = questions.length;
   const percent = Math.round((score / total) * 100);
