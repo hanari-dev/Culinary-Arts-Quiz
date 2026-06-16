@@ -23,7 +23,7 @@ An interactive quiz application that showcases my progress in mastering front-en
     * Implemented logic for `checkAnswer`, `calculateScore`, and `getGrade`.
 * **DOM Interaction:** Dynamically injected content and applied conditional CSS classes for instant user feedback.
 * **Bonus - High Score Tracking:** Leveraged `localStorage` to save and persist the user's all-time high score, demonstrating a practical use of persistent browser storage.
-* **Bonus - Randomization:** Implemented a shuffle algorithm to ensure a unique quiz experie
+* **Bonus - Randomization:** Implemented a shuffle algorithm to ensure a unique quiz experience. 
 
 ## Screenshots
 
