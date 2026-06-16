@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My JavaScript Quiz App</title>
+  <meta name="description" content="Interactive quiz app built with vanilla JavaScript — Week 5 WEB101 assignment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER — do not modify
+       ============================================================ -->
+  <header class="site-header">
+    <nav class="nav-bar">
+      <a href="#" class="nav-brand">My<span class="accent">Quiz</span></a>
+      <span class="nav-label">Week 5 — JS Quiz</span>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       All of this HTML is wired up and ready to go.
+       Your JavaScript in app.js will target elements by their id.
+       Do not change the id attributes.
+       ============================================================ -->
+  <main class="page-wrapper">
+
+    <!-- Progress bar — JS sets the width via progressBar.style.width -->
+    <div class="progress-bar-track" role="progressbar" aria-label="Quiz progress">
+      <div class="progress-bar-fill" id="progressBar"></div>
+    </div>
+
+    <!-- Quiz card — shown during the quiz -->
+    <div class="quiz-card" id="quizCard">
+      <div class="question-meta">
+        <!-- JS updates these two with textContent -->
+        <span class="question-counter" id="questionCounter">Question 1 of 5</span>
+        <span class="question-score-badge" id="scoreBadge">Score: 0</span>
+      </div>
+
+      <!-- JS sets this to the current question text -->
+      <p class="question-text" id="questionText">Loading...</p>
+
+      <!-- JS creates buttons inside here for each option -->
+      <div class="options-grid" id="optionsGrid"></div>
+
+      <!-- JS adds 'show correct' or 'show wrong' classes to reveal feedback -->
+      <div class="feedback-box" id="feedbackBox"></div>
+
+      <!-- JS adds the 'show' class to reveal this after the user answers -->
+      <button class="next-btn" id="nextBtn">Next Question →</button>
+    </div>
+
+    <!-- Results card — hidden until all questions are answered -->
+    <div class="results-card" id="resultsCard">
+      <div class="results-emoji" id="resultsEmoji">🎉</div>
+      <h1 class="results-title" id="resultsTitle">Quiz Complete!</h1>
+      <p class="results-subtitle" id="resultsSubtitle">Here's how you did.</p>
+      <div class="score-display">
+        <div class="score-number" id="scoreDisplay">0<span>/5</span></div>
+        <div class="grade-badge" id="gradeDisplay">—</div>
+      </div>
+      <div class="results-breakdown">
+        <div class="breakdown-item">
+          <span class="breakdown-value" id="correctCount">0</span>
+          <span class="breakdown-label">Correct</span>
+        </div>
+        <div class="breakdown-item">
+          <span class="breakdown-value" id="wrongCount">0</span>
+          <span class="breakdown-label">Wrong</span>
+        </div>
+        <div class="breakdown-item">
+          <span class="breakdown-value" id="percentDisplay">0%</span>
+          <span class="breakdown-label">Score</span>
+        </div>
+      </div>
+      <button class="restart-btn" id="restartBtn">Try Again ↺</button>
+    </div>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER — do not modify
+       ============================================================ -->
+  <footer class="site-footer">
+    <p>&copy; 2026 My Quiz App. Built for WEB101 — Week 5 Assignment.</p>
+  </footer>
+
+  <!-- Your JavaScript — all your code goes in app.js -->
+  <script src="app.js"></script>
+</body>
+</html>
