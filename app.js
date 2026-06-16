@@ -277,4 +277,5 @@ restartBtn.addEventListener('click', restartQuiz);
 /* =============================================================
    INIT — runs renderQuestion() when the page first loads
    ============================================================= */
+shuffleQuestions();
 renderQuestion();
